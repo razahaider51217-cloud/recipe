@@ -1,0 +1,175 @@
+/* ==========================================================================
+   Sarab branch data - single source of truth for:
+     - locations.html (branch cards + local business JSON-LD)
+     - js/branches.js (booking form + checkout branch picker)
+     - the homepage "Our Branch Locations" section
+   Addresses/phones are placeholder-safe US addresses for this build: swap them
+   for the real branch details before spending on Google Ads.
+   ========================================================================== */
+module.exports = [
+   {
+      id: 'new-york',
+      city: 'New York',
+      state: 'NY',
+      name: 'Sarab New York - Madison Avenue (Flagship)',
+      address: '1420 Madison Avenue, New York, NY 10029',
+      street: '1420 Madison Avenue',
+      zip: '10029',
+      lat: 40.7887,
+      lng: -73.9523,
+      phone: '+1 (212) 555-0134',
+      tel: '+12125550134',
+      hours: 'Wed - Thu 9 AM - 10 PM &middot; Fri - Sat 9 AM - 11 PM &middot; Sun 11 AM - 9 PM',
+      schemaHours: [
+         { days: ['Wednesday', 'Thursday'], opens: '09:00', closes: '22:00' },
+         { days: ['Friday', 'Saturday'], opens: '09:00', closes: '23:00' },
+         { days: ['Sunday'], opens: '11:00', closes: '21:00' }
+      ],
+      seats: 120,
+      since: 2012,
+      food: 'Burgers, pizza, fried chicken, wraps, pasta',
+      note: 'Our original 20-seat diner grew into the flagship kitchen where every cheap recipe on this site was tested.'
+   },
+   {
+      id: 'los-angeles',
+      city: 'Los Angeles',
+      state: 'CA',
+      name: 'Sarab Los Angeles - Sunset Boulevard',
+      address: '7420 Sunset Boulevard, Los Angeles, CA 90046',
+      street: '7420 Sunset Boulevard',
+      zip: '90046',
+      lat: 34.0983,
+      lng: -118.3526,
+      phone: '+1 (323) 555-0142',
+      tel: '+13235550142',
+      hours: 'Daily 10 AM - 12 AM',
+      schemaHours: [{ days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'], opens: '10:00', closes: '00:00' }],
+      seats: 110,
+      since: 2016,
+      food: 'Burgers, loaded fries, smash tacos',
+      note: 'Open until midnight with a drive-thru lane and a rooftop patio for late-night budget feasts.'
+   },
+   {
+      id: 'chicago',
+      city: 'Chicago',
+      state: 'IL',
+      name: 'Sarab Chicago - River North',
+      address: '1180 North State Street, Chicago, IL 60610',
+      street: '1180 North State Street',
+      zip: '60610',
+      lat: 41.9042,
+      lng: -87.6287,
+      phone: '+1 (312) 555-0187',
+      tel: '+13125550187',
+      hours: 'Wed - Sun 9 AM - 11 PM',
+      schemaHours: [
+         { days: ['Wednesday', 'Thursday', 'Friday', 'Saturday'], opens: '09:00', closes: '23:00' },
+         { days: ['Sunday'], opens: '11:00', closes: '21:00' }
+      ],
+      seats: 95,
+      since: 2017,
+      food: 'Deep-dish slices, burgers, chicken buckets',
+      note: 'Two blocks from the Brown Line - the lunch queue moves fast between 12 and 2 PM.'
+   },
+   {
+      id: 'houston',
+      city: 'Houston',
+      state: 'TX',
+      name: 'Sarab Houston - Westheimer',
+      address: '2450 Westheimer Road, Houston, TX 77098',
+      street: '2450 Westheimer Road',
+      zip: '77098',
+      lat: 29.7417,
+      lng: -95.4083,
+      phone: '+1 (713) 555-0119',
+      tel: '+17135550119',
+      hours: 'Daily 10 AM - 12 AM',
+      schemaHours: [{ days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'], opens: '10:00', closes: '00:00' }],
+      seats: 130,
+      since: 2018,
+      food: 'Nashville chicken, family bundles, Tex-Mex wraps',
+      note: 'Our biggest dining room - built for family bundles and birthday tables of 10 or more.'
+   },
+   {
+      id: 'miami',
+      city: 'Miami Beach',
+      state: 'FL',
+      name: 'Sarab Miami - Ocean Drive',
+      address: '861 Ocean Drive, Miami Beach, FL 33139',
+      street: '861 Ocean Drive',
+      zip: '33139',
+      lat: 25.7804,
+      lng: -80.1301,
+      phone: '+1 (305) 555-0164',
+      tel: '+13055550164',
+      hours: 'Daily 10 AM - 1 AM',
+      schemaHours: [{ days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'], opens: '10:00', closes: '01:00' }],
+      seats: 88,
+      since: 2019,
+      food: 'Beach burgers, frozen shakes, ceviche style wraps',
+      note: 'Steps from the sand with open-air seating and the latest closing time in the group.'
+   },
+   {
+      id: 'atlanta',
+      city: 'Atlanta',
+      state: 'GA',
+      name: 'Sarab Atlanta - Midtown',
+      address: '1050 Peachtree Street NE, Atlanta, GA 30309',
+      street: '1050 Peachtree Street NE',
+      zip: '30309',
+      lat: 33.7843,
+      lng: -84.3847,
+      phone: '+1 (404) 555-0128',
+      tel: '+14045550128',
+      hours: 'Wed - Sun 9 AM - 11 PM',
+      schemaHours: [
+         { days: ['Wednesday', 'Thursday', 'Friday', 'Saturday'], opens: '09:00', closes: '23:00' },
+         { days: ['Sunday'], opens: '11:00', closes: '21:00' }
+      ],
+      seats: 100,
+      since: 2020,
+      food: 'Hot chicken, wings, budget brunch plates',
+      note: 'Weekend brunch runs 9 AM - 1 PM with $6 plates and free refills.'
+   },
+   {
+      id: 'seattle',
+      city: 'Seattle',
+      state: 'WA',
+      name: 'Sarab Seattle - Belltown',
+      address: '2101 Fourth Avenue, Seattle, WA 98121',
+      street: '2101 Fourth Avenue',
+      zip: '98121',
+      lat: 47.6139,
+      lng: -122.3416,
+      phone: '+1 (206) 555-0173',
+      tel: '+12065550173',
+      hours: 'Wed - Sun 9 AM - 10 PM',
+      schemaHours: [
+         { days: ['Wednesday', 'Thursday', 'Friday', 'Saturday'], opens: '09:00', closes: '22:00' },
+         { days: ['Sunday'], opens: '11:00', closes: '21:00' }
+      ],
+      seats: 84,
+      since: 2021,
+      food: 'Coffee rubbed burgers, salmon wraps, pasta bowls',
+      note: 'Our most sustainable kitchen - 90% of packaging is compostable.'
+   },
+   {
+      id: 'austin',
+      city: 'Austin',
+      state: 'TX',
+      name: 'Sarab Austin - Congress Avenue',
+      address: '600 Congress Avenue, Austin, TX 78701',
+      street: '600 Congress Avenue',
+      zip: '78701',
+      lat: 30.2683,
+      lng: -97.7431,
+      phone: '+1 (512) 555-0196',
+      tel: '+15125550196',
+      hours: 'Daily 10 AM - 12 AM',
+      schemaHours: [{ days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'], opens: '10:00', closes: '00:00' }],
+      seats: 92,
+      since: 2022,
+      food: 'Smash burgers, brisket loaded fries, tacos',
+      note: 'Live music on Fridays and a $7 late-night menu after 10 PM.'
+   },
+];
